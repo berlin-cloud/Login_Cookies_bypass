@@ -1,0 +1,13 @@
+<%- include('partials/header.ejs') %>
+<button>Login</button>
+<button>Signup</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $("button").eq(0).on("click",()=>{
+        window.location.href = "/login"
+    });
+    $("button").eq(1).on("click",()=>{
+        window.location.href = "/signup"
+    });
+</script>
+<%- include('partials/footer.ejs') %>

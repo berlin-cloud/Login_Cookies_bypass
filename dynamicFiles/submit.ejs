@@ -1,0 +1,7 @@
+<%- include('partials/header.ejs') %>
+<form action="/secrets/submit" method="post">
+    <label for="secret">Enter Your Secret</label>
+    <input type="text" name="secret" id="secret" required>
+    <button type="submit">submit</button>
+</form>
+<%- include('partials/footer.ejs') %>
